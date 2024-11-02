@@ -1,0 +1,354 @@
+:root{
+--background:#ffffff;
+--color:#000;
+--Main-font: "Kumbh Sans", sans-serif;
+--box-shadow:rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+*{
+     padding: 0;
+     margin:0;
+     box-sizing: border-box;
+     font-family: var(--Main-font);
+     box-sizing: border-box;
+ }
+ html{
+     scroll-behavior: smooth;
+     user-select: none;
+ }
+ 
+ body{
+     font-size:14px;/*font size of header*/
+     background-color:var(--background);
+     font-family:var(--Main-font);
+     line-height:35px;
+ }
+
+ li , a{
+     list-style: none;
+     text-decoration: none;
+     color:var(--color);
+ }
+ .headers{
+     display: flex;
+     justify-content: space-around;
+     height:80px;
+     align-items: flex-end;
+ 
+ }
+ .logo{
+     display: flex;
+     align-items: flex-end;
+     transition:0.5s ease-in;
+     opacity:0.5;;
+ }
+ .headers img{
+     width:50px;
+ }
+ .logo:hover{
+     transform:scale(2.0);
+ }
+ .links ul{
+     display: flex;
+     gap:30px;
+ }
+ .links a{
+     opacity:0.5;
+ transition:0.5s;
+ }
+ .links a:hover{
+     opacity:1;
+     border-bottom:1px solid #000;
+ }
+ .allsection{
+     padding:0px 30px;
+     display: flex;
+     flex-direction: column;
+    
+ }
+ .bold{
+     font-weight:500;
+ }
+ .section1{
+     display: flex;
+     text-align: center;
+     margin-top:40px;
+     width:100%;
+     align-self: center;
+  
+     
+ }
+.authour{
+     text-align:right;
+     margin-right:2em;
+      opacity:0.5;
+      margin-top:0.8em; 
+     font-size:0.8em;
+}
+ .quotespara p{
+     font-size:2em;
+     font-family: "Patrick Hand", cursive;
+ }
+ .section2{
+     margin-top:3em;
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+ }
+ .info{
+     order:2;
+    text-align:justify;
+ }
+ .profile{
+     width:70%;
+}
+.profile img{
+     border-radius:10px;
+     width:100%;
+     box-shadow:var(--box-shadow);
+ 
+ }
+ .info_sec1{
+     display: flex;
+     gap:10px;
+     padding:20px 0px;
+     font-size:1.5em;
+     align-items: center;
+     font-weight:500;
+     justify-content: center;
+ }
+ .circle{
+     width:20px;
+     height:20px;
+     background-color:yellow;
+     border-radius:50%;
+    align-self: flex-start; 
+ }
+ .pSec{
+     font-size:1.2em;
+
+ }
+
+.space{
+     padding:10px 0px;
+}
+.connect_btn{
+     margin-top:2em;
+}
+.btnC{
+     padding:10px 20px;
+     background:#0e11d1;
+     outline:none;
+     border:none;
+     color:#fff;
+     border-radius:2px;
+     transition:0.3s ease-in-out;
+}
+.btnC:active{
+     transform:scale(0.8);
+}
+.pSec2{
+     font-size:1.5em;
+}
+.section3{
+     margin-top:3em;
+}
+.div1{
+     text-align: justify;
+     margin-top:1.5em;
+}
+.skillset1{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.imgs{
+     width:70%;
+
+}
+.imgs img{
+    margin-top:1em;
+width:100%;
+border:var(--box-shadow);
+border-radius:10px;;
+}
+.section4{
+     margin-top:1.5em;
+     display: flex;
+     flex-direction:column;
+     gap:10px;
+}
+.contme ul{
+     display:flex;
+     justify-content: flex-start;
+     gap:20px;
+     padding:0px 20px;
+     transition:0.5s ease-in-out;
+}
+.contme ul a{
+     font-size:1.5em;
+}
+.updateNotifi{
+     margin-top:1.5em;
+     background:rgb(175, 236, 84);
+     padding:10px 20px;
+     width:100%;
+
+}
+@keyframes textAnimation {
+from{
+    opacity:0;
+    transform:translateY(200px);
+}    
+to{
+    opacity:1;
+    transform:translateY(0px);
+}
+}
+@keyframes photoAnimation1{
+    from{
+        opacity:0;
+        transform:translateX(5em);
+    }    
+    to{
+        opacity:1;
+        transform:translateX(0em);
+    }
+    }
+    @keyframes photoAnimation2 {
+        from{
+            opacity:0;
+            transform:translateX(-5em);
+        }    
+        to{
+            opacity:1;
+            transform:translateX(0em);
+        }
+        }
+/* media queries */
+
+ @media screen and (max-width:430px) {
+    body{
+        font-size:12px;
+    }
+    
+ }
+ @media screen and (min-width:700px)  and (max-width:950px){
+    body{
+                font-size:16px;
+    }
+    .profile{
+        width:50%;
+    }
+    .imgs{
+        width:50%;
+    }
+    .section1{
+        width:80%;
+    }
+    .info_sec1{
+        justify-content:flex-start;
+    }
+    
+ }
+ @media screen and (min-width:950px)  and (max-width:1200px){
+    body{
+        font-size:17px;
+    }
+    .section2{
+        margin-top:15vh;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .info{
+        width:60%;
+    }
+    .profile{
+        width:30%;
+        order:2;
+    }
+    .imgs{
+        width:40%;
+    }
+    .section1{
+        margin:3em 0em;
+        line-height:80px;
+        margin-bottom:1.5em;
+        width:80%;
+    }
+    .info_sec1{
+        justify-content:flex-start;
+    }
+ }
+
+ @media screen and (min-width:1200px){
+    body{
+        /* background:blue; */
+        font-size:18px;
+    }
+    .section2{
+        margin-top:15vh;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .info{
+        width:50%;
+    }
+    .profile{
+        width:40%;
+        order:2;
+    }
+    .imgs{
+        width:40%;
+    }
+    .section1{
+        margin:5em 0em;
+        line-height:90px;
+        margin-bottom:1.5em;
+        margin-top:5em;
+        font-size:2em;
+        width:80%;
+    }
+    .skillset1{
+        flex-direction:row;
+        justify-content:space-between;
+        gap:30px;
+    }
+    .div1{
+        width:60%;
+    }
+    .imgs{
+        width:30%;
+        margin-right:3em;
+        align-items: center;
+    }
+    .two{
+        order:2;
+        margin-right:3em;
+    }
+    .section4{
+        margin-top:3.5em;
+    }
+    .animateText{
+        animation:textAnimation 3s ease-in-out both;
+        animation-timeline:view();
+        animation-range:entry 50% cover 40%;
+    }
+    .img1{
+        animation:photoAnimation2 3s ease-in-out both;
+        animation-timeline:view();
+        animation-range:entry 50% cover 40%;
+    }
+    .img2,.profile img{
+        animation:photoAnimation1 3s ease-in-out both;
+        animation-timeline:view();
+        animation-range:entry 50% cover 40%;
+    }
+    .info_sec1{
+        justify-content:flex-start;
+    }
+    
+ }
