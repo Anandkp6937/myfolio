@@ -198,6 +198,7 @@ border-radius:10px;;
      width:100%;
 
 }
+
 @keyframes textAnimation {
 from{
     opacity:0;
@@ -244,7 +245,7 @@ to{
         width:50%;
     }
     .imgs{
-        width:50%;
+        width:85%;
     }
     .section1{
         width:80%;
