@@ -135,15 +135,21 @@
 }
 .connect_btn{
      margin-top:2em;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     gap:10px;
 }
 .btnC{
-     padding:10px 20px;
+     padding:15px 20px;
      background:#0e11d1;
      outline:none;
      border:none;
      color:#fff;
      border-radius:2px;
      transition:0.3s ease-in-out;
+     border-radius:5px;
+     font-weight:bold;
 }
 .btnC:active{
      transform:scale(0.8);
@@ -235,6 +241,10 @@ to{
     body{
         font-size:12px;
     }
+    .btnC{
+        padding:10px 20px;
+    }
+   
     
  }
  @media screen and (min-width:700px)  and (max-width:950px){
@@ -251,6 +261,12 @@ to{
         width:80%;
     }
     .info_sec1{
+        justify-content:flex-start;
+    }
+    .btnC{
+        padding:15px 20px;
+    }
+    .connect_btn{
         justify-content:flex-start;
     }
     
@@ -281,6 +297,12 @@ to{
         width:80%;
     }
     .info_sec1{
+        justify-content:flex-start;
+    }
+    .btnC{
+        padding:15px 20px;
+    }
+    .connect_btn{
         justify-content:flex-start;
     }
  }
@@ -349,6 +371,12 @@ to{
         animation-range:entry 50% cover 40%;
     }
     .info_sec1{
+        justify-content:flex-start;
+    }
+    .btnC{
+        padding:15px 20px;
+    }
+    .connect_btn{
         justify-content:flex-start;
     }
     
