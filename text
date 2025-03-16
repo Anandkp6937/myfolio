@@ -1,0 +1,31 @@
+ <div class="blog">
+
+        <div class="">
+            <h2 class="bold sec3 pSec2 blogHeader">Recent Blogs &nbsp;<i class="fa-solid fa-pager"></i></h2>
+        </div>
+
+        <div class="blog-wrap">
+
+          
+          
+        </div>
+
+     </div>
+
+     window.addEventListener('DOMContentLoaded',async()=>{
+  let data=await fetch('https://random-rho-nine.vercel.app/blog');
+  let blogData=await data.json();
+  await makeCards(blogData);
+  
+})
+function makeCards(arr){
+  blogContainer.innerHTML='';
+  arr.forEach((item)=>{
+    blogContainer.innerHTML +=`<div class="blog-comp">
+                <h2 class="blog-link blg"><a href="https://${item.url}">${item.title}</a></h2>
+                <div class=""><h2 class="blog-desc blg">${item.description}</h2></div>
+            </div>`
+
+  })
+
+}
